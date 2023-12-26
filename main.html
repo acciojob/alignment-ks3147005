@@ -4,10 +4,89 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
-</head>
 
+	 <style>
+        body {
+            text-align: center;
+        }
+        .middle {
+            margin: auto;
+        }
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
+
+    <h1>HTML Assignment #3</h1>
+
+    <!-- Table 1 -->
+    <table id="table-1" class="middle">
+        <tr>
+            <td id="t11">Row 1, Column 1</td>
+            <td id="t12">Row 1, Column 2</td>
+            <td id="t13">Row 1, Column 3</td>
+        </tr>
+        <tr>
+            <td id="t21">Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+            <td class="right">Row 2, Column 3 (Right-aligned)</td>
+        </tr>
+        <tr class="center">
+            <td>Row 3, Column 1 (Centered)</td>
+            <td>Row 3, Column 2 (Centered)</td>
+            <td>Row 3, Column 3 (Centered)</td>
+        </tr>
+    </table>
+
+    <!-- Table 2 -->
+    <table id="table-2" class="middle">
+        <tr>
+            <td id="t21" colspan="6">Row 1, Cell 1 (Spanning 6 columns)</td>
+        </tr>
+        <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+            <td>Row 2, Column 3</td>
+            <td>Row 2, Column 4</td>
+            <td>Row 2, Column 5</td>
+            <td>Row 2, Column 6</td>
+        </tr>
+        <!-- Additional rows can be added as needed -->
+    </table>
+
+    <!-- Table 3 -->
+    <table id="table-3" class="middle">
+        <tr style="background-color: green;">
+            <td colspan="2">Green Row 1 (Spanning 2 columns)</td>
+        </tr>
+        <tr>
+            <td id="t-image" colspan="2"><img src="YOUR_IMAGE_URL" alt="Description of the image"></td>
+        </tr>
+        <!-- Additional rows can be added as needed -->
+        <tr style="background-color: blue;">
+            <td colspan="2">Blue Row (Spanning 2 columns)</td>
+        </tr>
+    </table>
     <script type="text/javascript" src="./script.js">
 </script>
 
